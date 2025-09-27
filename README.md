@@ -23,7 +23,7 @@
 
 ### Data from Report `Ex1/MissionAcft_Ex1_3_4.txt`
 
-| Date and Time            | Ground Speed (nm/hr) | Fuel Remaining (lb) |
+| Date and Time            | Ground Speed (nm/hr) | Fuel Consumed (lb) |
 |--------------------------|----------------------|---------------------|
 | 1 May 2024 19:52:13.124  | 479.611609           | 28,588.498          |
 | 1 May 2024 19:52:13.316  | 479.612198           | 28,589.031          |
