@@ -2,6 +2,9 @@
 
 # STK Master Certification
 
+<a href="https://help.agi.com/stk/#training/manuals.htm?TocPath=Tutorials%2520and%2520Training%257C_____0" style="display: inline-block; background-color: #5b17f8ff; color: white; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold;">STK Training Manuals</a>
+
+
 ## Exercise 1
 ### Model aircraft missions with Aviator
 
