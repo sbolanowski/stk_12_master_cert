@@ -12,7 +12,7 @@ BEGIN Place
         EcfLatitude		  3.8294249999999998e+01
         EcfLongitude		 -1.0442944444444444e+02
         EcfAltitude		  0.0000000000000000e+00
-        HeightAboveGround		  0.0000000000000000e+00
+        HeightAboveGround		  1.5240000000000000e+01
         ComputeTrnMaskAsNeeded		 Off
         SaveTrnMaskDataInBinary		 Off
         LightingGrazingType		 GroundModel
@@ -933,7 +933,7 @@ BEGIN Place
                 AzElFillAltTranslucency		 0.5
                 UseAzElColor		 Off
                 AzElColor		 #ffffff
-                MinDisplayAlt		 0
+                MinDisplayAlt		 15.24
                 MaxDisplayAlt		 10000000
                 NumAzElMaskSteps		 1
                 ShowAzElAtRangeMask		 Off
@@ -945,6 +945,15 @@ BEGIN Place
                 MinDisplayRange		 0
                 MaxDisplayRange		 10000000
                 NumAzElAtRangeMaskSteps		 1
+
+                BEGIN RangeContourData
+                    Show		 Off
+                    ShowRangeFill		 Off
+                    RangeFillTranslucency		 0.5
+                    LabelUnits		 4
+                    NumDecimalDigits		 3
+
+                END RangeContourData
 
             END Graphics
 
@@ -1030,6 +1039,12 @@ BEGIN Place
     END Extensions
 
     BEGIN SubObjects
+
+        Class Sensor
+
+            Servo		
+
+        END Class
 
     END SubObjects
 

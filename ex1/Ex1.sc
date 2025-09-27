@@ -68,7 +68,6 @@ BEGIN Scenario
             BEGIN StreamingTerrain
                 UseCurrentStreamingTerrainServer		 No
                 CurrentStreamingTerrainServerName		 https://gcs.agi.com/
-                StreamingTerrainTilesetName		 world
                 StreamingTerrainServerName		 assets.agi.com/stk-terrain/
                 StreamingTerrainAzimuthElevationMaskEnabled		 No
                 StreamingTerrainObscurationEnabled		 No
@@ -126,19 +125,22 @@ BEGIN Scenario
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 228
-            WindowRectTop		 107
-            WindowRectRight		 1709
-            WindowRectBottom		 597
+            WindowRectLeft		 330
+            WindowRectTop		 209
+            WindowRectRight		 1807
+            WindowRectBottom		 695
         END Report
 
         BEGIN Report
-            Name		 Ex1_3_41
+            Name		 Radar SearchTrack
             Type		 Report
-            BaseDir		 User
-            Style		 Ex1_3_4
+            BaseDir		 Install
+            Style		 Radar SearchTrack
             AGIViewer		 Yes
-            Instance		 Aircraft/MissionAcft
+            Instance		 Place/PUB/Sensor/Servo/Radar/Radar
+            BEGIN InstanceList
+                Instance		 Aircraft/MissionAcft
+            END InstanceList
             BEGIN TimeData
                 BEGIN Section
                     SectionNumber		 1
@@ -150,7 +152,7 @@ BEGIN Scenario
 
                         BEGIN Intervals
 
-"1 May 2024 17:00:00.000000000" "1 May 2024 21:19:03.673288675"
+"1 May 2024 17:00:00.000000000" "2 May 2024 17:00:00.000000000"
                         END Intervals
 
                     END IntervalList
@@ -164,10 +166,72 @@ BEGIN Scenario
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 410
-            WindowRectTop		 289
-            WindowRectRight		 1891
-            WindowRectBottom		 779
+            WindowRectLeft		 408
+            WindowRectTop		 287
+            WindowRectRight		 1889
+            WindowRectBottom		 777
+        END Report
+
+        BEGIN Report
+            Name		 Elevation Angle
+            Type		 Graph
+            BaseDir		 Install
+            Style		 Elevation Angle
+            AGIViewer		 No
+            Instance		 Place/PUB/Sensor/Servo/Radar/Radar
+            BEGIN InstanceList
+                Instance		 Aircraft/MissionAcft
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 2
+                    ShowIntervals		 No
+                    BEGIN IntervalList
+
+                        DateUnitAbrv		 UTCG
+
+                        BEGIN Intervals
+
+"1 May 2024 19:42:30.000000000" "1 May 2024 19:43:00.000000000"
+                        END Intervals
+
+                    END IntervalList
+
+                    TimeType		 Availability
+                    SamplingType		 FixedStep
+                    Step		 1
+                    TimeBound		 0
+                END Section
+                BEGIN Section
+                    SectionNumber		 2
+                    SectionType		 2
+                    ShowIntervals		 No
+                    BEGIN IntervalList
+
+                        DateUnitAbrv		 UTCG
+
+                        BEGIN Intervals
+
+"1 May 2024 19:42:30.000000000" "1 May 2024 19:43:00.000000000"
+                        END Intervals
+
+                    END IntervalList
+
+                    TimeType		 Availability
+                    SamplingType		 FixedStep
+                    Step		 1
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 304
+            WindowRectTop		 183
+            WindowRectRight		 1785
+            WindowRectBottom		 673
         END Report
     END QuickReports
 
@@ -199,8 +263,8 @@ BEGIN Scenario
             LaunchWindowUseEntireTraj		 Yes
             LaunchWindowTrajMETStart		 0
             LaunchWindowTrajMETStop		 900
-            LaunchWindowStart		 0
-            LaunchWindowStop		 0
+            LaunchWindowStart		 44384400
+            LaunchWindowStop		 44470800
             LaunchMETOffset		 0
             LaunchWindowUseSecEphem		 No 
             LaunchWindowUseScenFolderForSecEphem		 Yes
@@ -421,6 +485,19 @@ BEGIN Scenario
                     Style		 Ex1_3_4
                 END Favorite
             END Class
+            BEGIN Class
+                Name		 Access
+                BEGIN Favorite
+                    Type		 Graph
+                    BaseDir		 Install
+                    Style		 Elevation Angle
+                END Favorite
+                BEGIN Favorite
+                    Type		 Report
+                    BaseDir		 Install
+                    Style		 Radar SearchTrack
+                END Favorite
+            END Class
         END ReportFavorites
 
         BEGIN ADFFileData
@@ -634,12 +711,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1638,7 +1709,7 @@ BEGIN Scenario
 
                 StartTime		 1 May 2024 17:00:00.000000000
                 EndTime		 2 May 2024 17:00:00.000000000
-                CurrentTime		 1 May 2024 19:07:22.689000000
+                CurrentTime		 1 May 2024 19:42:48.000000000
                 Mode		 XRealtime
                 Direction		 Forward
                 UpdateDelta		 10
@@ -2361,20 +2432,25 @@ BEGIN Scenario
             *		
         END Instance
         Instance Aircraft/MissionAcft
-            *		
             Aircraft/MissionAcft		
+            Place/PUB/Sensor/Servo		
         END Instance
         Instance Place/ANDREWS_AFB_01R_19L
-            *		
             Place/ANDREWS_AFB_01R_19L		
         END Instance
         Instance Place/EDWARDS_AFB_04R_22L
-            *		
             Place/EDWARDS_AFB_04R_22L		
         END Instance
         Instance Place/PUB
-            *		
             Place/PUB		
+            Place/PUB/Sensor/Servo		
+        END Instance
+        Instance Place/PUB/Sensor/Servo
+            Place/PUB/Sensor/Servo		
+            Place/PUB/Sensor/Servo/Radar/Radar		
+        END Instance
+        Instance Place/PUB/Sensor/Servo/Radar/Radar
+            Place/PUB/Sensor/Servo/Radar/Radar		
         END Instance
     END References
 

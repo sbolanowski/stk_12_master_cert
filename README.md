@@ -10,6 +10,10 @@
 
 ![Ex1 Banner](/assets/banner.png)
 
+**Which of the following answers is correct concerning enabling Delay Enroute Climbs and Descents in Aviator?**
+
+- **The aircraft begins climbing or descending at a point in time during the procedure such that it won't achieve the new altitude until the start of the arc or pattern, or until it has reached the procedure site.**
+
 **What is the length of runway 01R / 19L at Andrews AFB?**  
 - **9755 feet**
   
@@ -24,7 +28,7 @@
 
 ---
 
-### Data from Report `Ex1/MissionAcft_Ex1_3_4.txt`
+### Data extracted from Report `ex1/MissionAcft_Ex1_3_4`
 
 | Date and Time            | Ground Speed (nm/hr) | Fuel Consumed (lb) |
 |--------------------------|----------------------|---------------------|
@@ -37,5 +41,28 @@
 | 1 May 2024 19:52:14.064  | 479.621642           | 28,591.107          |
 | 1 May 2024 21:19:03.673  | 7.160344             | 43,066.861          |
 
+
+---
+
+![Ex1.2 Banner](/assets/radar.png.bmp)
+
+**Basing a probability of detection on an S/T Integrated PDet value of 0.8 or higher, approximately what time can you be certain of first tracking the aircraft?**
+- **19:43:00**
+
+**When the aircraft is outbound from PUB, what is the approximate distance from the radar to the aircraft when the S/T Integrated PDet value drops below 0.8?**
+- **141 km**
+
+**What is the approximate S/T Integrated Signal to Noise Ratio (SNR) when an S/T Pulses Integrated value of 1 is first achieved?**
+- **16 dB** 
+
+**Basing a probability of detection on an S/T Integrated PDet value of 0.8 or higher and not considering the time the aircraft is in the radar’s cone of silence, what is the approximate length of time the radar can track the aircraft? Round times up or down as needed.**
+- **17 min**
+
+**Basing a probability of detection on an S/T Integrated PDet value of 0.8 or higher, what is the approximate elevation angle of the aircraft from the radar site the first time 0.8 is achieved?**
+- **3.6 deg**
+
+---
+
+### Data extracted from Report `ex1/Place-PUB-Sensor-Servo-Radar-Radar-To-Aircraft-MissionAcft_Radar_SearchTrack`
 
 ---

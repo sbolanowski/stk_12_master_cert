@@ -1494,12 +1494,6 @@ BEGIN Aircraft
         END ObjectCoverage
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN Atmosphere
@@ -2347,11 +2341,116 @@ BEGIN Aircraft
 <?xml version = "1.0" standalone = "yes"?>
 <SCOPE>
     <VAR name = "Inherit">
-        <BOOL>true</BOOL>
+        <BOOL>false</BOOL>
     </VAR>
     <VAR name = "Model">
         <VAR name = "Radar_Cross_Section">
-            <SCOPE Class = "LinkEmbedControl" />
+            <SCOPE Class = "LinkEmbedControl">
+                <VAR name = "ReferenceType">
+                    <STRING>&quot;Unlinked&quot;</STRING>
+                </VAR>
+                <VAR name = "Component">
+                    <VAR name = "Radar_Cross_Section">
+                        <SCOPE Class = "RCS">
+                            <VAR name = "Version">
+                                <STRING>&quot;1.0.0 a&quot;</STRING>
+                            </VAR>
+                            <VAR name = "IdentifierInformation">
+                                <SCOPE>
+                                    <VAR name = "Identifier">
+                                        <STRING>&quot;{D7DB3BEE-D021-4959-A08F-F6D567F37E72}&quot;</STRING>
+                                    </VAR>
+                                    <VAR name = "Version">
+                                        <STRING>&quot;2&quot;</STRING>
+                                    </VAR>
+                                    <VAR name = "SdfInformation">
+                                        <SCOPE>
+                                            <VAR name = "Version">
+                                                <STRING>&quot;0.0&quot;</STRING>
+                                            </VAR>
+                                            <VAR name = "Url">
+                                                <STRING>&quot;&quot;</STRING>
+                                            </VAR>
+                                        </SCOPE>
+                                    </VAR>
+                                    <VAR name = "SourceIdentifierInformation">
+                                        <SCOPE>
+                                            <VAR name = "Identifier">
+                                                <STRING>&quot;{EF03E656-5AB7-4F70-A363-4753683F2BD4}&quot;</STRING>
+                                            </VAR>
+                                            <VAR name = "Version">
+                                                <STRING>&quot;1&quot;</STRING>
+                                            </VAR>
+                                            <VAR name = "SdfInformation">
+                                                <SCOPE>
+                                                    <VAR name = "Version">
+                                                        <STRING>&quot;0.0&quot;</STRING>
+                                                    </VAR>
+                                                    <VAR name = "Url">
+                                                        <STRING>&quot;&quot;</STRING>
+                                                    </VAR>
+                                                </SCOPE>
+                                            </VAR>
+                                        </SCOPE>
+                                    </VAR>
+                                </SCOPE>
+                            </VAR>
+                            <VAR name = "ComponentName">
+                                <STRING>&quot;Radar_Cross_Section&quot;</STRING>
+                            </VAR>
+                            <VAR name = "Description">
+                                <STRING>&quot;Radar Cross Section&quot;</STRING>
+                            </VAR>
+                            <VAR name = "Type">
+                                <STRING>&quot;Radar Cross Section&quot;</STRING>
+                            </VAR>
+                            <VAR name = "UserComment">
+                                <STRING>&quot;Radar Cross Section&quot;</STRING>
+                            </VAR>
+                            <VAR name = "ReadOnly">
+                                <BOOL>false</BOOL>
+                            </VAR>
+                            <VAR name = "Clonable">
+                                <BOOL>true</BOOL>
+                            </VAR>
+                            <VAR name = "Category">
+                                <STRING>&quot;@Top&quot;</STRING>
+                            </VAR>
+                            <VAR name = "FrequencyBandList">
+                                <LIST>
+                                    <SCOPE>
+                                        <VAR name = "MinFrequency">
+                                            <QUANTITY Dimension = "BandwidthUnit" Unit = "Hz">
+                                                <REAL>2997920</REAL>
+                                            </QUANTITY>
+                                        </VAR>
+                                        <VAR name = "ComputeTypeStrategy">
+                                            <VAR name = "Constant Value">
+                                                <SCOPE Class = "RCS Compute Strategy">
+                                                    <VAR name = "ConstantValue">
+                                                        <QUANTITY Dimension = "RcsUnit" Unit = "sqm">
+                                                            <REAL>100</REAL>
+                                                        </QUANTITY>
+                                                    </VAR>
+                                                    <VAR name = "Type">
+                                                        <STRING>&quot;Constant Value&quot;</STRING>
+                                                    </VAR>
+                                                    <VAR name = "ComponentName">
+                                                        <STRING>&quot;Constant Value&quot;</STRING>
+                                                    </VAR>
+                                                </SCOPE>
+                                            </VAR>
+                                        </VAR>
+                                        <VAR name = "SwerlingCase">
+                                            <STRING>&quot;0&quot;</STRING>
+                                        </VAR>
+                                    </SCOPE>
+                                </LIST>
+                            </VAR>
+                        </SCOPE>
+                    </VAR>
+                </VAR>
+            </SCOPE>
         </VAR>
     </VAR>
 </SCOPE>        END RadarCrossSection
@@ -2393,7 +2492,7 @@ BEGIN Aircraft
                     ShowGndTrack		 On
                     ShowGndMarker		 On
                     ShowOrbit		 On
-                    ShowOrbitMarker		 Off
+                    ShowOrbitMarker		 On
                     ShowElsetNum		 Off
                     ShowSpecialSwath		 On
                     AllColors		 #4a5cfb

@@ -5,6 +5,10 @@
             <Row ClassName = "Scenario" ComponentName = "AvailabilityIntervals" DisplayName = "Ex1 AvailabilityIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "/Application/STK/Scenario/Ex1" Type = "IntervalList">
                 <Interval Name = "Ex1 AvailabilityIntervals" StartTime = "1 May 2024 17:00:00.000" StopTime = "2 May 2024 17:00:00.000" />
             </Row>
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Place-PUB-Sensor-Servo-Radar-Radar-To-Aircraft-MissionAcft AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/Ex1/Place/PUB/Sensor/Servo/Radar/Radar;/Application/STK/Scenario/Ex1/Aircraft/MissionAcft" Type = "IntervalList">
+                <Interval Name = "Place-PUB-Sensor-Servo-Radar-Radar-To-Aircraft-MissionAcft AccessIntervals" StartTime = "1 May 2024 19:27:29.123" StopTime = "1 May 2024 19:50:59.935" />
+                <Interval Name = "Place-PUB-Sensor-Servo-Radar-Radar-To-Aircraft-MissionAcft AccessIntervals" StartTime = "1 May 2024 19:53:28.300" StopTime = "1 May 2024 20:18:03.545" />
+            </Row>
         </ContentView>
     </Views>
     <Views Type = "Time">

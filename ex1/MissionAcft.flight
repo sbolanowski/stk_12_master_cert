@@ -659,7 +659,7 @@
                 <SecIntoDay Value = "6.1200000000000000e+04" VarType = "VT_R8" />
             </Object>
         </SavedEpoch>
-        <GUID Value = "{13AD5CB8-B146-42F8-B220-25C4931F05A0}" VarType = "VT_BSTR" />
+        <GUID Value = "{AD071EDF-323F-4D9D-9E8D-4F76F3302594}" VarType = "VT_BSTR" />
         <TerrainSet VarType = "VT_UNKNOWN">
             <Object clsid = "{3CD176DA-A749-4029-A000-D9352FFC07F1}">
                 <DisplayName Value = "New Terrain Set" VarType = "VT_BSTR" />
