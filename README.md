@@ -28,7 +28,8 @@
 
 ---
 
-### Data extracted from Report `ex1/MissionAcft_Ex1_3_4`
+### Data extracted from Report 
+* `ex1/MissionAcft_Ex1_3_4`
 
 | Date and Time            | Ground Speed (nm/hr) | Fuel Consumed (lb) |
 |--------------------------|----------------------|---------------------|
@@ -58,7 +59,9 @@
 
 ---
 
-### Data extracted from Report `ex1/Place-PUB-Sensor-Servo-Radar-Radar-To-Aircraft-MissionAcft_Radar_SearchTrack`
+### Data extracted from Report 
+
+* `ex1/Place-PUB-Sensor-Servo-Radar-Radar-To-Aircraft-MissionAcft_Radar_SearchTrack`
 
 ---
 
@@ -86,7 +89,8 @@ velocity of the previous segment.**
 
 ---
 
-### Data extracted from Report `ex2/CommSat_Segment_Summary`
+### Data extracted from Report 
+* `ex2/CommSat_Segment_Summary`
 
 | **Maneuver Summary**                                 |                                                              |
 |------------------------------------------------------|--------------------------------------------------------------|
