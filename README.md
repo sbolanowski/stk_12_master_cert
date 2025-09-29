@@ -116,9 +116,14 @@ velocity of the previous segment.**
 
 ---
 
-### Data extracted from Report `ex2/Place-Raisting-Receiver-DLRx-To-Satellite-CommSat-Transmitter-DLTx_Link_Budget_-_Detailed` and `ex2/Place-Raisting-Receiver-DLRx-To-Satellite-CommSat-Transmitter-DLTx_AER` 
+### Data extracted from Report 
 
+#### Reports
 
+* `ex2/Place-Raisting-Receiver-DLRx-To-Satellite-CommSat-Transmitter-DLTx_Link_Budget_-_Detailed`
+*  `ex2/Place-Raisting-Receiver-DLRx-To-Satellite-CommSat-Transmitter-DLTx_AER` 
+
+#### Data
 
 * First instance that BER is greater than 1.000000e-009 (@ 1 May 2024 10:47:30.000).
 
@@ -146,3 +151,83 @@ velocity of the previous segment.**
 | 2 May 2024 09:19:42.263       | 333.790           | 0.595               | 27816.691113       |
 
 ---
+
+## EXERCISE 3
+### Coverage Capability
+
+
+![Ex3 Banner](/assets/orbit_flat_cov.png)
+
+**Which statement is true concerning Simple Coverage?**
+- **Measures whether or not a point is accessible by any of the assigned assets.**
+
+**What is the approximate percentage of the Earth’s surface covered by all three cameras?**
+- **77 %**
+
+**What is maximum number of accesses seen over the analysis period?**
+- **8**
+
+**How many times was the grid point located at latitude -46.000 degrees and longitude 231.818 degrees accessed?**
+- **4**
+
+**Which latitude contains the highest maximum of coverage time?**
+- **58.000 deg**
+
+**Which statement is true concerning Access Duration?**
+- **Measures the intervals during which coverage is available from a single asset.**
+
+**What is the approximate average access duration of all access intervals over the entire coverage interval?**
+- **21 seconds**
+
+**What is the approximate average access duration of all access intervals over the entire coverage interval? (Direct Sun constraint)**
+- **12 seconds**
+
+**What is the approximate average access duration along the longitude 300.000 degrees?**
+- **37 seconds**
+
+**What is the approximate average access duration for Canada?**
+- **6 seconds**
+
+----
+
+### Data extracted from Report 
+
+#### Reports
+
+
+* `ex3/FigureOfMerit1_Percent_Satisfied`
+* `ex3/FigureOfMerit1_Grid_Stats`
+* `ex3/FigureOfMerit1_Value_By_Grid_Point`
+* `ex3/FigureOfMerit1_Value_By_Latitude`
+* `ex3/FigureOfMerit1_Value_By_Longitude`
+
+* `ex3/FigureOfMerit2_Grid_Stats`
+* `ex3/FigureOfMerit2_Grid_Stats_Sun_Constraint`
+* `ex3/FigureOfMerit2_Stats_By_Region`
+
+#### Data
+
+* Percentage of the Earth’s surface covered by the three cameras.
+
+| % Satisfied | Area Satisfied (km^2) |
+|-------------|-----------------------|
+| 77.40       | 394,784,072.55        |
+
+
+* Maximum number of accesses seen over period.
+
+| Minimum | Maximum | Average     |
+|---------|---------|-------------|
+| 0       | 8       | 1.478748    |
+
+* Times grid point @ [-46, 231.818] was accessed.
+
+| Latitude (deg) | Longitude (deg) | FOM Value |
+|----------------|-----------------|-----------|
+| -46.000        | 231.818         | 4         |
+
+---
+
+...
+
+----

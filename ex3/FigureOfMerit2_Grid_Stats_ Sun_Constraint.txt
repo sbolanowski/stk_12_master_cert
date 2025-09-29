@@ -1,0 +1,36 @@
+                                               29 Sep 2025 17:32:02
+FigureOfMerit-FigureOfMerit2
+
+
+                        Coverage Properties                        
+-------------------------------------------------------------------
+Custom Regions Coverage                                            
+Grid Altitude: 0.0000 (km)                                         
+Ground Altitude set from grid altitude reference (On ellipsoid)    
+Resolution: 0.5000 (deg)                                           
+Number of Points: 5475                                             
+Assets required for a valid access: At Least 1                     
+Assigned Assets:                                                   
+    AreaTarget/United_States_of_America:    Active                 
+    AreaTarget/Mexico:    Active                                   
+    AreaTarget/Canada:    Active                                   
+    Satellite/R_Sat/Sensor/R_Camera:    Active                     
+Access Interval: 1 May 2024 16:00:00.000 to 2 May 2024 16:00:00.000
+Regional Acceleration: Automatic                                   
+Light time delay: Ignored                                          
+Maximum Sampling Time Step: 360.000 secs                           
+Minimum Sampling Time Step: 0.010 secs                             
+Time Convergence: 5.000e-03 secs                                   
+Value Convergence: Relative 1.000e-08 - Absolute 1.000e-14         
+
+
+            FOM Properties           
+-------------------------------------
+Percent Time Covered                 
+Satisfaction is not enabled          
+FOM value range check is not enabled.
+
+
+ Minimum     Maximum      Average 
+--------    ---------    ---------
+0.000000    81.009984    12.596990
