@@ -235,3 +235,73 @@ velocity of the previous segment.**
 ...
 
 ----
+
+## EXERCISE 4
+### Missile Launch
+
+
+![Ex4 Banner](/assets/test_missile.bmp)
+
+**Approximately, what is your worst Bit Error Rate (BER)?**
+- **2.2e-09**
+
+
+**What time does the BER first climb above 1.0999999e-9?**
+- **18:02:00.000**
+
+
+**At what time does TestMissile reach apogee?**
+- **18:02:25.000**
+
+
+**What is the approximate minimum C/N reported when TestMissile is at apogee?**
+- **6 dB**
+
+
+**Based on the time selected in question 33(reach apogee), at what latitude and longitude is the lowest C/N dB reported?**
+- **Latitude 33.812, Longitude 253.262**
+
+
+
+![Ex4.2 Banner](/assets/apogee.bmp)
+
+
+**Which answer is correct concerning a To Vector?**
+- **It is defined as a projection of a specified vector onto a direction of reference vector.**
+
+
+**Which answer describes the purpose of Show Magnitude in the 3D Graphics - Vector page?**
+- **It displays the magnitude (distance) value on the selected geometric element.**
+
+
+**What is the approximate angle value between the To Vectors at apogee?**
+- **148 deg**
+
+
+**At apogee, what is the approximate distance from TestMissile to CommSite?**
+- **102 km**
+
+
+**What is the approximate ground distance between TestMissile’s launch point and impact point?**
+- **102 km**
+
+----
+
+### Data extracted from Report 
+
+#### Reports
+
+
+* `ex4/TestMissile_Altitude_vs_Ground_Range`
+
+* `ex4/FigureOfMerit1_Grid_Stats_Over_Time`
+* `ex4/FigureOfMerit1_Value_By_Grid_Point_At_Time`
+
+
+* `ex4/Place-CommSite-Sensor-Servo-Receiver-DLRx-To-Missile-TestMissile-Transmitter-DLTx_Link_Budget`
+
+#### Data
+
+...
+
+----
